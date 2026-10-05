@@ -1,4 +1,4 @@
-limport importlib
+import importlib
 import json
 import google.generativeai as genai
 import pandas as pd
