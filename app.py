@@ -1,4 +1,4 @@
-import importlib
+limport importlib
 import json
 import google.generativeai as genai
 import pandas as pd
@@ -20,7 +20,7 @@ try:
   genai.configure(api_key=api_key)
   model = genai.GenerativeModel("gemini-3.8-flash")
 except Exception as e:
-    st.error(f"API setup error: {e}")
+  st.error("API Key missing from Streamlit Secrets.")
   model = None
 
 uploaded_file = st.file_uploader(
